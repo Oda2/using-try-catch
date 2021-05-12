@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node: ['10.x', '12.x', '14.x']
+        node: ['12.x', '14.x']
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
@@ -22,7 +22,7 @@ jobs:
       - name: Install deps and build (with cache)
         uses: pnpm/action-setup@v2.0.1
         with:
-          version: 6.0.2
+          version: 6.3.0
           run_install: true
 
       - name: Lint
