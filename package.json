@@ -1,16 +1,25 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "name": "using-try-catch",
-  "author": "Renato Oda",
   "module": "dist/using-try-catch.esm.js",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "description": "Simplify the use of try-catch",
   "files": [
     "dist",
     "src",
     "README.md"
   ],
+  "author": {
+    "name": "Renato Oda",
+    "email": "renato.oda2@gmail.com",
+    "url": "https://twitter.com/renato_oda"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oda2/using-try-catch"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",

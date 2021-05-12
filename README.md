@@ -1,5 +1,13 @@
 # Using Try Catch
 
+Simplify the use of try-catch
+
+![Main Branch](https://github.com/oda2/using-try-catch/actions/workflows/main.yml/badge.svg?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/Oda2/using-try-catch/badge.svg)](https://coveralls.io/github/Oda2/using-try-catch)
+[![GitHub license](https://img.shields.io/github/license/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/stargazers)
+
 ## Installation
 
 ```sh
