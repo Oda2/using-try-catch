@@ -38,6 +38,35 @@ const example = async () => {
 example();
 ```
 
+### Browser Examples
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.2"></script>
+  </head>
+  <body>
+
+    <h1>Exemplo</h1>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function loaded() {
+
+        const example = async () => {
+          const promise = new Promise((resolve) => resolve('exemple'));
+
+          const result = await usingTryCatch(promise);
+          console.log(result.data); // 'example'
+        };
+        
+        example();
+      });
+    </script>
+  </body>
+</html>
+```
+
 
 ### NPM Statistics
 

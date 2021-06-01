@@ -4,7 +4,7 @@ import cleanup from 'rollup-plugin-cleanup';
 export default {
   input: 'src/index.ts',
   output: {
-    name: 'using-try-catch',
+    name: 'usingTryCatch',
     dir: 'dist',
     format: 'umd',
     sourcemap: true

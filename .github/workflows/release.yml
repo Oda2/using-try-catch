@@ -20,9 +20,9 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://registry.npmjs.org/
 
       - run: npm publish
@@ -40,13 +40,14 @@ jobs:
         with:
           version: 6.6.2
           run_install: true
+          registry: https://npm.pkg.github.com
 
       - name: Build
         run: pnpm build
 
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://npm.pkg.github.com
 
       - run: npm publish
