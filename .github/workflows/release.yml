@@ -55,7 +55,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_GITHUB_TOKEN}}
-        with:
-          node-version: 14
-          registry-url: https://npm.pkg.github.com
-          scope: '@oda2'
