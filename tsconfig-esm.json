@@ -1,9 +1,9 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tslib"],
   "exclude": ["node_modules", "**/*.test.ts"],
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
+    "module": "ESNext",
+    "target": "ESNext",
     "lib": ["dom", "esnext"],
     "importHelpers": false,
     "declaration": false,
@@ -19,6 +19,6 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": false,
-    "outDir": "dist/cjs"
+    "outDir": "dist/esm"
   }
 }

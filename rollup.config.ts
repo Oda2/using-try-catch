@@ -1,7 +1,6 @@
 import typescript from '@rollup/plugin-typescript';
 import cleanup from 'rollup-plugin-cleanup';
 
-
 export default {
   input: 'src/index.ts',
   output: {
@@ -11,7 +10,9 @@ export default {
     sourcemap: true
   },
   plugins: [
-    typescript(),
+    typescript({
+      module: 'ES2015'
+    }),
     cleanup({ comments: 'none' })
   ]
 };
