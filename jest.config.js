@@ -1,7 +1,7 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
-  // coverageProvider: 'babel',
+  testRunner: 'jest-circus/runner',
   collectCoverageFrom: [
     './src/**/*.ts',
   ],
