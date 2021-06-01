@@ -1,0 +1,13 @@
+.vscode
+.github
+dist
+coverage
+node_modules
+*.js
+*.log
+.gitignore
+.gitattributes
+.npmrc
+.npmignore
+*.json
+*.yml
