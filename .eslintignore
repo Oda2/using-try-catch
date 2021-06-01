@@ -11,3 +11,4 @@ node_modules
 .npmignore
 *.json
 *.yml
+*.config.ts
