@@ -49,6 +49,8 @@ jobs:
         with:
           node-version: 14
           registry-url: https://npm.pkg.github.com
+          scope: '@oda2'
+          always-auth: true
 
       - run: npm publish
         env:

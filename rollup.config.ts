@@ -11,7 +11,9 @@ export default {
   },
   plugins: [
     typescript({
-      module: 'ES2015'
+      module: 'ES2015',
+      declaration: true,
+      outDir: 'dist'
     }),
     cleanup({ comments: 'none' })
   ]
