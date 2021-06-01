@@ -29,8 +29,7 @@
     "build:umd": "rollup -c rollup.config.ts",
     "test": "jest .",
     "coverage": "jest . --coverage",
-    "lint": "eslint .",
-    "prepare": "pnpm run build"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
