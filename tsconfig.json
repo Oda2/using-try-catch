@@ -3,7 +3,7 @@
   "exclude": ["node_modules", "**/*.test.ts"],
   "compilerOptions": {
     "module": "commonjs",
-    "target": "es5",
+    "target": "ES3",
     "lib": ["dom", "esnext"],
     "importHelpers": false,
     "declaration": false,
