@@ -75,7 +75,7 @@ example();
   <body>
     <h1>Example</h1>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.6"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.9/usingTryCatch.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function loaded() {
 

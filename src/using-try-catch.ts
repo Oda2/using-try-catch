@@ -3,7 +3,7 @@ interface DataResult<T> {
   error: Error | null;
 }
 
-const usingTryCatch = async <T>(
+export const usingTryCatch = async <T>(
   promise: Promise<T> | Array<Promise<T>>
 ): Promise<DataResult<T>> => {
   try {

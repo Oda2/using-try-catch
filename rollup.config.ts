@@ -1,11 +1,12 @@
 import typescript from '@rollup/plugin-typescript';
 import cleanup from 'rollup-plugin-cleanup';
+import { terser } from "rollup-plugin-terser";
 
 export default {
-  input: 'src/using-try-catch.ts',
+  input: 'src/index.ts',
   output: {
+    file: 'dist/usingTryCatch.js',
     name: 'usingTryCatch',
-    dir: 'dist',
     format: 'umd',
     sourcemap: true
   },
@@ -16,6 +17,7 @@ export default {
       declaration: true,
       outDir: 'dist'
     }),
-    cleanup({ comments: 'none' })
+    cleanup({ comments: 'none' }),
+    terser()
   ]
 };
