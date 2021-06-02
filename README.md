@@ -1,3 +1,4 @@
+
 # Using Try Catch
 
 Simplify the use of try-catch.
@@ -12,6 +13,7 @@ Avoid writing code that contains high scope decoupling with using-try-catch.
 [![CDN jsdelivr](https://img.shields.io/badge/cdn%20jsdelivr-0.1.5-green)](https://cdn.jsdelivr.net/npm/using-try-catch@0.1.5/dist/index.js)
 [![NPM Size](https://img.shields.io/bundlephobia/min/using-try-catch)](https://www.npmjs.com/package/using-try-catch)
 [![Vulnerability](https://img.shields.io/snyk/vulnerabilities/github/oda2/using-try-catch)](https://github.com/Oda2/using-try-catch)
+
 [![Edit admiring-sun-5qry6](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/using-try-catch-zul50)
 
 ## Installation
@@ -89,6 +91,46 @@ example();
     </script>
   </body>
 </html>
+```
+
+### Fetch Example
+
+```js
+const https = require('https');
+const { usingTryCatch } = require('using-try-catch');
+
+const fetchDog = () => new Promise((resolve, reject) => {
+  const options = {
+    host: 'dog.ceo', //Xdog.ceo
+    path: '/api/breeds/image/random',
+    method: 'GET',
+    port: 443
+  };
+
+  const request = https.request(options, (res) => {
+    res.setEncoding('utf-8');
+
+    let body = '';
+    res.on('data', (chunk) => body += chunk);
+    res.on('end', () => resolve(JSON.parse(body)));
+    res.on('error', (error) => reject(error));
+  });
+
+  request.on('error', (error) => reject(`Error in request: ${error}`));
+  request.end();
+});
+
+const fetchData = async () => {
+  const { data, error } = await usingTryCatch(fetchDog());
+
+  if (error) {
+    return console.log('Error => ', error); // Error in request: Error: getaddrinfo ENOTFOUND Xdog.ceo
+  }
+
+  return console.log('Data => ', data); // { message: 'https://images.dog.ceo/breeds/terrier-fox/n02095314_3189.jpg', status: 'success' }
+};
+
+fetchData();
 ```
 
 ## The problem

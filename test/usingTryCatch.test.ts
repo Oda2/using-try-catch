@@ -35,4 +35,17 @@ describe('using Try Catch', () => {
     expect(result.data![3]).toEqual('ola 4');
     expect(result.data![4]).toEqual('ola 5');
   });
+
+  it('Return Error after execution with Array Promisse', async () => {
+    const promisses = [];
+    promisses.push(new Promise<string>((resolve) => resolve('ola 1')));
+    promisses.push(new Promise<string>((resolve) => resolve('ola 2')));
+    promisses.push(new Promise<string>((_, reject) => reject('Boom')));
+    promisses.push(new Promise<string>((resolve) => resolve('ola 4')));
+    promisses.push(new Promise<string>((resolve) => resolve('ola 5')));
+
+    const result = await usingTryCatch<string>(promisses);
+    expect(result.data).toBeNull();
+    expect(result.error).toEqual('Boom');
+  });
 });
