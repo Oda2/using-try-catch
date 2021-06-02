@@ -28,30 +28,4 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-  
-  github:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
 
-      - name: Install deps and build (with cache)
-        uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.6.2
-          run_install: true
-          registry: https://npm.pkg.github.com
-
-      - name: Build
-        run: pnpm build
-
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14
-          registry-url: https://npm.pkg.github.com
-          scope: '@oda2'
-          always-auth: true
-
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_GITHUB_TOKEN}}
