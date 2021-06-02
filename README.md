@@ -72,7 +72,7 @@ example();
   <body>
     <h1>Example</h1>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.5"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.5/dist/index.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function loaded() {
 
