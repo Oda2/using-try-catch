@@ -9,5 +9,6 @@
     "source.fixAll.eslint": false
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "npm.packageManager": "pnpm"
+  "npm.packageManager": "pnpm",
+  "liveServer.settings.port": 5501
 }

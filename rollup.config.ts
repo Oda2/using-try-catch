@@ -2,7 +2,7 @@ import typescript from '@rollup/plugin-typescript';
 import cleanup from 'rollup-plugin-cleanup';
 
 export default {
-  input: 'src/index.ts',
+  input: 'src/using-try-catch.ts',
   output: {
     name: 'usingTryCatch',
     dir: 'dist',
@@ -12,6 +12,7 @@ export default {
   plugins: [
     typescript({
       module: 'ES2015',
+      target: 'ES6',
       declaration: true,
       outDir: 'dist'
     }),

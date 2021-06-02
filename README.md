@@ -12,6 +12,7 @@ Avoid writing code that contains high scope decoupling with using-try-catch.
 [![CDN jsdelivr](https://img.shields.io/badge/cdn%20jsdelivr-0.1.5-green)](https://cdn.jsdelivr.net/npm/using-try-catch@0.1.5/dist/index.js)
 [![NPM Size](https://img.shields.io/bundlephobia/min/using-try-catch)](https://www.npmjs.com/package/using-try-catch)
 [![Vulnerability](https://img.shields.io/snyk/vulnerabilities/github/oda2/using-try-catch)](https://github.com/Oda2/using-try-catch)
+[![Edit admiring-sun-5qry6](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/using-try-catch-zul50)
 
 ## Installation
 
@@ -72,7 +73,7 @@ example();
   <body>
     <h1>Example</h1>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.5/dist/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.1.6"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function loaded() {
 

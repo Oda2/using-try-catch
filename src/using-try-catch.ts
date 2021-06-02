@@ -1,15 +1,19 @@
 interface DataResult<T> {
-  data?: T;
-  error?: Error;
+  data: T | Array<T> | null;
+  error: Error | null;
 }
 
-export const usingTryCatch = async <T>(
-  promise: Promise<T>
+const usingTryCatch = async <T>(
+  promise: Promise<T> | Array<Promise<T>>
 ): Promise<DataResult<T>> => {
   try {
-    return { data: await promise };
-  } catch (err) {
-    return { error: err };
+    if (Array.isArray(promise)) {
+      return { data: await Promise.all(promise), error: null };
+    }
+
+    return { data: await promise, error: null };
+  } catch (error) {
+    return { data: null, error };
   }
 };
 
