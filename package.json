@@ -26,7 +26,8 @@
     "build:umd": "rollup -c rollup.config.ts",
     "test": "jest .",
     "coverage": "jest . --coverage",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepublishOnly": "cd dist"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",

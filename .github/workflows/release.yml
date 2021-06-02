@@ -21,7 +21,7 @@ jobs:
         run: pnpm build
 
       - name: Prepare Pack
-        run: cp package.json README.md dist/ && cd dist
+        run: cp package.json README.md dist/
 
       - uses: actions/setup-node@v2
         with:
