@@ -48,4 +48,18 @@ describe('using Try Catch', () => {
     expect(result.data).toBeNull();
     expect(result.error).toEqual('Boom');
   });
+
+  it.each(['string', 123, 10.9, true, false, null, undefined])(
+    'Return %s error when passing it as rejected value',
+    async (value) => {
+      const promise = new Promise<string>((_, reject) => {
+        const err: unknown = value;
+        reject(err);
+      });
+
+      const result = await usingTryCatch<string>(promise);
+      expect(result.data).toBeNull();
+      expect(result.error).toEqual(value);
+    }
+  );
 });

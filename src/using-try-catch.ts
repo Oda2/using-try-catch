@@ -1,6 +1,6 @@
 interface DataResult<T> {
   data: T | Array<T> | null;
-  error: Error | null;
+  error: Error | unknown | null;
 }
 
 export const usingTryCatch = async <T>(
@@ -12,7 +12,10 @@ export const usingTryCatch = async <T>(
     }
 
     return { data: await promise, error: null };
-  } catch (error) {
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return { data: null, error: error as Error };
+    }
     return { data: null, error };
   }
 };

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.10",
+  "version": "0.2.0",
   "license": "MIT",
   "name": "using-try-catch",
   "homepage": "https://github.com/Oda2/using-try-catch",
@@ -30,24 +30,24 @@
     "prepublishOnly": "cd dist"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.1",
-    "@types/jest": "^26.0.23",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
-    "eslint": "^7.27.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "husky": "^6.0.0",
-    "jest": "26.6.3",
-    "jest-circus": "26.6.3",
-    "prettier": "^2.3.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@types/jest": "^27.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "jest": "28.1.0",
+    "jest-circus": "28.1.0",
+    "prettier": "^2.6.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.50.5",
+    "rollup": "^2.74.1",
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-terser": "^7.0.2",
-    "ts-jest": "26.5.5",
-    "tslib": "^2.2.0",
-    "typescript": "^4.3.2"
+    "ts-jest": "28.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
   },
   "keywords": [
     "try-catch",
@@ -58,5 +58,8 @@
   },
   "engines": {
     "node": ">=10"
+  },
+  "dependencies": {
+    "cypress": "^9.7.0"
   }
 }
