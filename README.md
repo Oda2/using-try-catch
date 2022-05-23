@@ -9,7 +9,7 @@ Avoid writing code that contains high scope decoupling with using-try-catch.
 [![GitHub license](https://img.shields.io/github/license/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/stargazers)
-[![CDN jsdelivr](https://img.shields.io/badge/cdn%20jsdelivr-0.2.0-green)](https://cdn.jsdelivr.net/npm/using-try-catch@0.2.0/dist/usingTryCatch.js)
+[![CDN jsdelivr](https://img.shields.io/badge/cdn%20jsdelivr-0.2.1-green)](https://cdn.jsdelivr.net/npm/using-try-catch@0.2.1/dist/usingTryCatch.js)
 [![Vulnerability](https://img.shields.io/snyk/vulnerabilities/github/oda2/using-try-catch)](https://github.com/Oda2/using-try-catch)
 [![Edit admiring-sun-5qry6](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/using-try-catch-zul50)
 
@@ -176,7 +176,7 @@ example();
     <img id="dog-1" />
     <img id="dog-2" />
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.2.0/usingTryCatch.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/using-try-catch@0.2.1/usingTryCatch.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function loaded() {
 

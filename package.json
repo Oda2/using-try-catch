@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "name": "using-try-catch",
   "homepage": "https://github.com/Oda2/using-try-catch",
@@ -58,8 +58,5 @@
   },
   "engines": {
     "node": ">=10"
-  },
-  "dependencies": {
-    "cypress": "^9.7.0"
   }
 }
