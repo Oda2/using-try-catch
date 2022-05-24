@@ -1,4 +1,3 @@
-
 # Using Try Catch
 
 Simplify the use of try-catch.
@@ -272,6 +271,10 @@ example();
 ### NPM Statistics
 
 [![NPM](https://nodei.co/npm/using-try-catch.png)](https://nodei.co/npm/using-try-catch/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch?ref=badge_shield)
 
 ### License
 Licensed under [MIT](https://github.com/Oda2/using-try-catch/blob/master/LICENSE)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch?ref=badge_large)
