@@ -14,10 +14,10 @@ Avoid writing code that contains high scope decoupling with using-try-catch.
 [![npm](https://img.shields.io/npm/v/using-try-catch?color=green)](https://www.npmjs.com/package/using-try-catch)
 ![npm](https://img.shields.io/npm/dy/using-try-catch)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch?ref=badge_shield)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
 
 ### SonarCloud
 
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
