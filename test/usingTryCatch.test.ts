@@ -18,6 +18,16 @@ describe("using Try Catch", () => {
     expect(result.error).toEqual("ola");
   });
 
+  it("Return Error after execution with Promise (throw)", async () => {
+    const promise = new Promise<string>(() => {
+      throw new Error("ola");
+    });
+    const result = await usingTryCatch<string>(promise);
+
+    expect(result.data).toBeNull();
+    expect(result.error).toEqual(Error("ola"));
+  });
+
   it("Return Data after execution with Array Promisse", async () => {
     const promisses: Array<Promise<string>> = [];
     promisses.push(new Promise<string>((resolve) => resolve("ola 1")));
