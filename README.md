@@ -30,7 +30,7 @@ Avoid writing code that contains high scope decoupling with using-try-catch.
 ## Installation
 
 ```sh
-$ npm add using-try-catch
+$ npm install using-try-catch
 
 // OR
 

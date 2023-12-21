@@ -1,24 +1,23 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts"],
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "ES6",
-    "lib": ["dom", "esnext"],
-    "importHelpers": false,
-    "declaration": false,
-    "sourceMap": false,
-    "rootDir": "./src",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
     "strict": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": false,
-    "outDir": "dist/cjs"
-  }
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
 }

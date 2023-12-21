@@ -6,9 +6,8 @@
     "*.md": "mdx"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false
+    "source.fixAll.eslint": "never"
   },
   "javascript.updateImportsOnFileMove.enabled": "never",
-  "npm.packageManager": "pnpm",
   "liveServer.settings.port": 5501
 }
