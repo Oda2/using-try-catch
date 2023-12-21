@@ -4,7 +4,6 @@ Simplify the use of try-catch.
 Avoid writing code that contains high scope decoupling with using-try-catch.
 
 ![Main Branch](https://github.com/oda2/using-try-catch/actions/workflows/main.yml/badge.svg?branch=main)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/46b647bc48d54dc09d0b31e84fa2644f)](https://app.codacy.com/gh/Oda2/using-try-catch?utm_source=github.com&utm_medium=referral&utm_content=Oda2/using-try-catch&utm_campaign=Badge_Grade_Settings)
 [![Coverage Status](https://coveralls.io/repos/github/Oda2/using-try-catch/badge.svg)](https://coveralls.io/github/Oda2/using-try-catch)
 [![GitHub license](https://img.shields.io/github/license/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/blob/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/Oda2/using-try-catch)](https://github.com/Oda2/using-try-catch/issues)
@@ -13,18 +12,6 @@ Avoid writing code that contains high scope decoupling with using-try-catch.
 [![Vulnerability](https://img.shields.io/snyk/vulnerabilities/github/oda2/using-try-catch)](https://github.com/Oda2/using-try-catch)
 [![npm](https://img.shields.io/npm/v/using-try-catch?color=green)](https://www.npmjs.com/package/using-try-catch)
 ![npm](https://img.shields.io/npm/dy/using-try-catch)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FOda2%2Fusing-try-catch?ref=badge_shield)
-
-### SonarCloud
-
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Oda2_using-try-catch&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Oda2_using-try-catch)
 
 
 ## Installation
