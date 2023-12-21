@@ -4,7 +4,7 @@ interface DataResult<T> {
 }
 
 export const usingTryCatch = async <T>(
-  promise: Promise<T> | Array<Promise<T>>
+  promise: Promise<T> | Array<Promise<T>>,
 ): Promise<DataResult<T>> => {
   try {
     if (Array.isArray(promise)) {

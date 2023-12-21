@@ -9,24 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Install deps and build (with cache)
-        uses: pnpm/action-setup@v2.0.1
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         with:
-          version: 7.11.0
-          run_install: true
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
 
-      - name: Build
-        run: pnpm build
+      - run: npm ci
+      - run: npm run build
 
       - name: Prepare Pack
         run: cp package.json README.md dist/
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
 
       - run: npm publish
         env:
