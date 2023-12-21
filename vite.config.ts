@@ -8,5 +8,12 @@ export default defineConfig({
       name: 'usingTryCatch',
       fileName: (format) => `usingTryCatch.${format}.js`
     }
+  },
+  test: {
+    coverage: {
+      all: false,
+      enabled: true,
+      reporter: ['text', 'lcov']
+    }
   }
 });
