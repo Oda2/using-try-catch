@@ -2,12 +2,8 @@
   "editor.tabSize": 2,
   "files.encoding": "utf8",
   "files.insertFinalNewline": true,
-  "files.associations": {
-    "*.md": "mdx"
-  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "never"
   },
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "liveServer.settings.port": 5501
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }
