@@ -1,13 +1,13 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "license": "MIT",
   "name": "using-try-catch",
   "homepage": "https://github.com/Oda2/using-try-catch",
   "module": "esm/using-try-catch.js",
   "main": "cjs/using-try-catch.js",
+  "type": "module",
   "typings": "index.d.ts",
   "description": "Simplify the use of try-catch",
-  "private": false,
   "author": {
     "name": "Renato Oda",
     "email": "renato.oda2@gmail.com",
@@ -18,27 +18,17 @@
     "url": "https://github.com/Oda2/using-try-catch"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "prepublishOnly": "cd dist",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "build": "tsc",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "analyze": "depcruise"
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.1",
-    "@typescript-eslint/eslint-plugin": "^8.17.0",
-    "@vitest/coverage-v8": "^2.1.8",
-    "dependency-cruiser": "^16.7.0",
-    "eslint": "^9.16.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.2.1",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.3",
-    "vitest": "^2.1.8"
+    "@types/node": "^25.3.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "^10.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
   },
   "keywords": [
     "try-catch",
@@ -49,6 +39,6 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=18"
   }
 }
