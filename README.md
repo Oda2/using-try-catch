@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/bundlephobia/min/using-try-catch?color=007BFF&style=flat-square" alt="bundle size" />
   </a>
   <a href="https://github.com/Oda2/using-try-catch/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/Oda2/using-try-catch/test.yml?color=9B59B6&style=flat-square" alt="tests" />
+    <img src="https://img.shields.io/github/actions/workflow/status/Oda2/using-try-catch/ci.yml?color=9B59B6&style=flat-square" alt="tests" />
   </a>
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/npm/l/using-try-catch?color=FF6B6B&style=flat-square" alt="license" />
