@@ -5,8 +5,7 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       reporter: ['text', 'lcov'],
-      include: ['lib/**/*'],
-      exclude: ['lib/**/*.stories.ts', 'lib/**/*.stories.tsx'],
+      include: ['src/**/*']
     },
   },
 });
