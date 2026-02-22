@@ -1,12 +1,18 @@
 {
-  "version": "0.8.0",
+  "version": "1.0.0",
   "license": "MIT",
   "name": "using-try-catch",
   "homepage": "https://github.com/Oda2/using-try-catch",
-  "module": "esm/using-try-catch.js",
-  "main": "cjs/using-try-catch.js",
-  "type": "module",
-  "typings": "index.d.ts",
+  "main": "dist/cjs/using-try-catch.js",
+  "module": "dist/esm/using-try-catch.js",
+  "types": "dist/esm/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/types/index.d.ts",
+      "import": "./dist/esm/using-try-catch.js",
+      "require": "./dist/cjs/using-try-catch.js"
+    }
+  },
   "description": "Simplify the use of try-catch",
   "author": {
     "name": "Renato Oda",
@@ -18,7 +24,9 @@
     "url": "https://github.com/Oda2/using-try-catch"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.cjs.json && tsc",
+    "build:esm": "tsc",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "lint": "eslint . --report-unused-disable-directives --max-warnings 0"

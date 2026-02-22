@@ -10,14 +10,11 @@
   <a href="https://www.npmjs.com/package/using-try-catch">
     <img src="https://img.shields.io/npm/dt/using-try-catch?color=28A745&style=flat-square" alt="npm downloads" />
   </a>
-  <a href="https://bundlephobia.com/package/using-try-catch">
-    <img src="https://img.shields.io/bundlephobia/min/using-try-catch?color=007BFF&style=flat-square" alt="bundle size" />
-  </a>
-  <a href="https://github.com/Oda2/using-try-catch/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/Oda2/using-try-catch/ci.yml?color=9B59B6&style=flat-square" alt="tests" />
+  <a href="https://github.com/Oda2/using-try-catch/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/Oda2/using-try-catch/ci.yml?color=9B59B6&label=CI&style=flat-square" alt="tests" />
   </a>
   <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/npm/l/using-try-catch?color=FF6B6B&style=flat-square" alt="license" />
+    <img src="https://img.shields.io/npm/l/using-try-catch?color=A32E27&style=flat-square" alt="license" />
   </a>
 </p>
 
@@ -135,7 +132,7 @@ const { data, error } = await usingTryCatch(fetchUser());
 Load via CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/using-try-catch/dist/usingTryCatch.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/using-try-catch/dist/esm/using-try-catch.js"></script>
 <script>
   const { data, error } = await usingTryCatch(fetch('/api/data'));
 </script>
