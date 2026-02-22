@@ -1,29 +1,23 @@
-name: Publish
+name: Release
 
 on:
-  release:
-    types: [published]
-
+  push:
+    tags:
+      - '*'
 jobs:
-  npmjs:
+  build-and-publish:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          registry-url: https://registry.npmjs.org/
-
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
       - run: npm ci
+      - run: npm test
       - run: npm run build
-
-      - name: Prepare Pack
-        run: cp package.json README.md dist/
-
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-

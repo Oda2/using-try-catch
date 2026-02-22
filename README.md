@@ -1,12 +1,27 @@
-# using-try-catch
+<div align="center">
+  <img src="assets/logo.png" alt="using-try-catch" width="200" />
+  <h1>using-try-catch</h1>
+</div>
 
-<img src="assets/logo.png" alt="using-try-catch" width="200" />
+<p align="center">
+  <a href="https://www.npmjs.com/package/using-try-catch">
+    <img src="https://img.shields.io/npm/v/using-try-catch?color=EA4335&label=npm&style=flat-square" alt="npm version" />
+  </a>
+  <a href="https://www.npmjs.com/package/using-try-catch">
+    <img src="https://img.shields.io/npm/dt/using-try-catch?color=28A745&style=flat-square" alt="npm downloads" />
+  </a>
+  <a href="https://bundlephobia.com/package/using-try-catch">
+    <img src="https://img.shields.io/bundlephobia/min/using-try-catch?color=007BFF&style=flat-square" alt="bundle size" />
+  </a>
+  <a href="https://github.com/Oda2/using-try-catch/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/Oda2/using-try-catch/test.yml?color=9B59B6&style=flat-square" alt="tests" />
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/npm/l/using-try-catch?color=FF6B6B&style=flat-square" alt="license" />
+  </a>
+</p>
 
-A tiny utility that simplifies try-catch handling in JavaScript/TypeScript. No more repetitive try-catch blocks for every async operation.
-
-![npm](https://img.shields.io/npm/v/using-try-catch)
-![TypeScript](https://img.shields.io/badge/TypeScript-ready-blue)
-![Browser](https://img.shields.io/badge/Browser-ready-green)
+> A tiny utility that simplifies try-catch handling in JavaScript/TypeScript. No more repetitive try-catch blocks for every async operation.
 
 ## Why?
 
@@ -16,13 +31,13 @@ Handling errors with async/await often leads to verbose code:
 const fetchData = async () => {
   let data;
   let error;
-  
+
   try {
     data = await api.get('/user');
   } catch (err) {
     error = err;
   }
-  
+
   if (error) return handleError(error);
   return processData(data);
 };
@@ -39,13 +54,20 @@ import usingTryCatch from 'using-try-catch';
 
 const fetchData = async () => {
   const { data, error } = await usingTryCatch(api.get('/user'));
-  
+
   if (error) return handleError(error);
   return processData(data);
 };
 ```
 
 That's it! Returns `{ data, error }` - always.
+
+## Features
+
+- **Zero dependencies** - Ultra lightweight
+- **TypeScript support** - Fully typed out of the box
+- **Universal** - Works in Node.js and browsers
+- **Flexible** - Handles single or multiple promises
 
 ## Usage
 
@@ -119,10 +141,20 @@ Load via CDN:
 </script>
 ```
 
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+<a href="https://github.com/Oda2/using-try-catch/issues">
+  <img src="https://img.shields.io/github/issues/Oda2/using-try-catch?color=FF6B6B&style=flat-square" alt="issues" />
+</a>
+
 ## License
 
 MIT - See [LICENSE](LICENSE) for details.
 
-## Contributing
+---
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+<p align="center">
+  Made with ❤️ by <a href="https://twitter.com/renato_oda">Renato Oda</a>
+</p>
